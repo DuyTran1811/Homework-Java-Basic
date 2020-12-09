@@ -1,13 +1,13 @@
 package BaiTap16;
 
 public class Address {
-    public String number;   // số nhà
+    public String number;    // số nhà
     public String lane;      // ngõ
     public String street;    // tên đường
     public String village;   // tên xóm
-    public String wards;      // phường/xã
-    public String district;     // quận/huyện
-    public String city;          // thành phố
+    public String wards;     // phường/xã
+    public String district;  // quận/huyện
+    public String city;      // thành phố
 
     public Address() {
         number = "";

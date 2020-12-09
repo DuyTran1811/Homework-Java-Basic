@@ -1,13 +1,13 @@
 package BaiTap16;
 
 public class Employee {
-    public String id;
-    public String name;
-    public String address;
-    public int age;
-    public String phoneNumber;
-    public float salary;
-    public float experience;
+    public String id;              //  Mã nhân viên
+    public String name;            //  Họ tên nhân viên
+    public String address;         //  Địa chỉ nhân viên
+    public int age;                //  Tuổi
+    public String phoneNumber;     //  Số điện thoại
+    public float salary;           //  Lương nhân viên
+    public float experience;       //  Số năm kinh ngiệm
 
     public void work(String jop) {
         System.out.println(name + " Dang Lam Viec " + jop);
