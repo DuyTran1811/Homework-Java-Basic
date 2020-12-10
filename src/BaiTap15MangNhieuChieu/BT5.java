@@ -13,7 +13,7 @@ public class BT5 {
     }
 
     private static void display(String[][] isoscelesTriangle) {
-        for (String[] strings : isoscelesTriangle) {
+        for (var strings : isoscelesTriangle) {
             for (int j = 0; j < 2 * isoscelesTriangle.length - 1; j++) {
                 System.out.print(strings[j]);
             }

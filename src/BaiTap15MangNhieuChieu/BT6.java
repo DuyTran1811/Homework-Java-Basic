@@ -14,9 +14,9 @@ public class BT6 {
 
     private static void display(String[][] hollowTriangle) {
         System.out.println("Hinh Can Ve");
-        for (int i = 0; i < hollowTriangle.length; i++) {
+        for (String[] strings : hollowTriangle) {
             for (int j = 0; j < 2 * hollowTriangle.length - 1; j++) {
-                System.out.print(hollowTriangle[i][j]);
+                System.out.print(strings[j]);
             }
             System.out.println();
         }

@@ -13,9 +13,9 @@ public class BT3 {
     }
 
     private static void display(String[][] triangles) {
-        for (int i = 0; i < triangles.length; i++) {
+        for (String[] triangle : triangles) {
             for (int j = 0; j < triangles.length; j++) {
-                System.out.print(triangles[i][j]);
+                System.out.print(triangle[j]);
             }
             System.out.println();
         }
@@ -24,7 +24,7 @@ public class BT3 {
     private static void fillTriangles(String[][] triangles) {
         for (int i = 1; i <= triangles.length; i++) {
             for (int j = 1; j <= triangles.length; j++) {
-                if (j > i) {
+                if (j < i) {
                     triangles[i - 1][j - 1] = "   ";
                 } else {
                     triangles[i - 1][j - 1] = " * ";
