@@ -16,11 +16,23 @@ public class BT10 {
         input.close();
         System.out.println("Phan tu Trong mang");
         showInt(number);
+        System.out.println("\nGiá trị " + x + " xuất hiện " +
+                countX(number, x, a, b) + " lần trong đoạn chỉ số [" + a + ", " + b + "].");
+    }
+
+    private static int countX(int[] number, int x, int a, int b) {
+        var count = 0;
+        for (int i = a; i <= b; i++) {
+            if (i >= 0 && i < number.length - 1 && number[i] == x) {
+                count++;
+            }
+        }
+        return count;
     }
 
     private static void showInt(int[] number) {
         for (var index : number) {
-            System.out.println(index + " ");
+            System.out.print(index + " ");
         }
     }
 
